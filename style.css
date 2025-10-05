@@ -1,0 +1,615 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+.dashboard-div {
+    display: flex;
+}
+
+.aside-section {
+    /* border: 1px solid black; */
+    height: 100vh;
+    width: 20vw;
+    position: sticky;
+    top: 0;
+    font-family: "Quicksand", sans-serif;
+}
+
+.aside-person-info {
+    height: 20vh;
+    width: 100%;
+    /* border: 1px solid red; */
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 30px;
+}
+
+.aside-person-info .person-image img {
+    height: 80px;
+    width: 80px;
+    border-radius: 50%;
+}
+
+.aside-person-info .person-info p {
+    padding: 20px 0px;
+    font-size: 20px;
+    font-weight: 500;
+}
+
+.aside-person-info .person-info i {
+    margin: 0px 10px;
+}
+
+.aside-options {
+    height: 80vh;
+    width: 100%;
+    /* border: 1px solid blue; */
+}
+
+.aside-options h3 {
+    /* text-transform: uppercase; */
+    font-weight: bold;
+    padding: 30px 20px;
+}
+
+.aside-options ul li {
+    list-style-type: none;
+    padding: 10px 20px;
+}
+
+.aside-options ul li:first-child {
+    background-color: cornflowerblue;
+    color: white;
+    font-weight: bold;
+}
+
+.aside-options ul li:hover {
+    cursor: pointer;
+    background-color: cornflowerblue;
+    font-weight: bold;
+    color: white;
+}
+
+.main-section {
+    /* border: 1px solid red; */
+    width: 80vw;
+    background-color: #f1f1f1;
+}
+
+.my-dashboard-div {
+    /* border: 1px solid red; */
+    padding: 30px;
+}
+
+.dashboard-header {
+    padding: 20px 0px;
+    font-size: 25px;
+    font-family: "Libertinus Serif Display", system-ui;
+}
+
+.dashboard-cards {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 50px;
+    font-family: "Quicksand", sans-serif;
+}
+
+.dashboard-card-1,
+.dashboard-card-2,
+.dashboard-card-3,
+.dashboard-card-4 {
+    /* border: 1px solid black; */
+    color: white;
+    padding: 20px 70px;
+    font-size: 20px;
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+    text-align: center;
+}
+
+.upper-dashboard {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 50px;
+}
+
+.dashboard-card-1 {
+    background-color: #f44336;
+}
+
+.dashboard-card-2 {
+    background-color: #2196F3;
+}
+
+.dashboard-card-3 {
+    background-color: #009688;
+}
+
+.dashboard-card-4 {
+    background-color: #ff9800;
+}
+
+.regions h3 {
+    font-size: 25px;
+    padding: 20px;
+    font-weight: 500;
+    font-family: "Libertinus Serif Display", system-ui;
+}
+
+.region-left img {
+    height: 300px;
+    width: 400px;
+    padding: 20px;
+}
+
+.regions {
+    display: flex;
+    justify-content: flex-start;
+    gap: 30px;
+}
+
+tr,
+td {
+    font-family: "Quicksand", sans-serif;
+}
+
+table tr i {
+    padding: 20px 15px;
+}
+
+table .table-content {
+    width: 40vw;
+    padding: 0px 40px;
+}
+
+table tr:nth-child(odd) {
+    background-color: #fff;
+}
+
+table .table-min {
+    padding: 0px 20px;
+}
+
+
+.progress-bar-section {
+    /* border: 1px solid black; */
+    margin-top: 20px;
+    padding-bottom: 20px;
+}
+
+.progress-bar-section h3 {
+    font-size: 25px;
+    font-family: "Libertinus Serif Display", system-ui;
+    padding: 20px;
+    font-weight: 500;
+}
+
+.progress-bar-section p {
+    font-size: 18px;
+    padding: 10px 20px;
+    font-family: "Quicksand", sans-serif;
+}
+
+.progress-bar-section .progress-bar-1 {
+    /* border: 1px solid red; */
+    width: 90%;
+    height: 40px;
+    margin: 0px 20px;
+    background-color: gray;
+}
+
+.progress-div-1 {
+    background-color: #4CAF50;
+    height: 100%;
+    width: 25%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: white;
+    font-weight: bold;
+    font-size: 18px;
+}
+
+.progress-bar-section .progress-bar-2 {
+    width: 90%;
+    height: 40px;
+    margin: 0px 20px;
+    background-color: gray;
+}
+
+.progress-div-2 {
+    background-color: #ff9800;
+    height: 100%;
+    width: 50%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: white;
+    font-weight: bold;
+    font-size: 18px;
+}
+
+.progress-bar-section .progress-bar-3 {
+    width: 90%;
+    height: 40px;
+    margin: 0px 20px;
+    background-color: gray;
+}
+
+.progress-div-3 {
+    background-color: #f44336;
+    height: 100%;
+    width: 75%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: white;
+    font-weight: bold;
+    font-size: 18px;
+}
+
+.countries-section {
+    padding: 20px;
+}
+
+.countries-section h3 {
+    font-size: 25px;
+    font-family: "Libertinus Serif Display", system-ui;
+    font-weight: 500;
+}
+
+.countries-section table {
+    width: 100%;
+    margin: 10px 0px 20px 0px;
+    font-family: "Quicksand", sans-serif;
+}
+
+.countries-section table td {
+    padding: 8px;
+}
+
+.countries-section button {
+    padding: 10px 30px;
+    background-color: #616161;
+    color: white;
+    font-size: 16px;
+    font-weight: 500;
+    border: none;
+    font-family: "Quicksand", sans-serif;
+}
+
+.recent-users-section {
+    /* border: 1px solid black; */
+    padding: 20px;
+}
+
+.recent-users-section h3 {
+    font-size: 25px;
+    font-family: "Libertinus Serif Display", system-ui;
+    font-weight: 500;
+}
+
+.recent-users-section ul {
+    margin: 10px 0px;
+    filter: drop-shadow(3px 3px 5px gray);
+}
+
+.recent-users-section ul li {
+    list-style-type: none;
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+    gap: 20px;
+    background-color: white;
+    padding: 10px;
+    border-bottom: 1px solid #ddd;
+    font-family: "Quicksand", sans-serif;
+}
+
+.recent-users-section ul li img {
+    height: 50px;
+    width: 50px;
+    border-radius: 50%;
+}
+
+.recent-comments-section {
+    /* border: 1px solid black; */
+    padding: 20px;
+}
+
+.recent-comments-section h3 {
+    font-size: 25px;
+    font-family: "Libertinus Serif Display", system-ui;
+    font-weight: 500;
+}
+
+.recent-comments-section ul {
+    margin: 10px 0px;
+}
+
+.recent-comments-section ul li {
+    list-style-type: none;
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+    gap: 100px;
+    /* background-color: white; */
+    padding: 10px;
+    font-family: "Quicksand", sans-serif;
+}
+
+.recent-comments-section ul li img {
+    height: 100px;
+    width: 100px;
+    border-radius: 50%;
+}
+
+.recent-comments-section span {
+    color: #646464;
+}
+
+
+.footer {
+    border: 1px solid black;
+    background-color: #616161;
+    color: white;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    font-family: "Quicksand", sans-serif;
+}
+
+.footer ul li {
+    list-style: none;
+}
+
+.footer-1,
+.footer-2,
+.footer-3 {
+    /* border: 1px solid red; */
+    width: 40vw;
+    padding: 30px;
+}
+
+.footer-1 h3 {
+    border-bottom: 5px solid #4CAF50;
+    font-size: 20px;
+    font-weight: 500;
+}
+
+.footer-1 ul {
+    margin-top: 10px;
+}
+
+.footer-1 ul li {
+    padding: 5px 0px;
+}
+
+.footer-2 h3 {
+    border-bottom: 5px solid #f44336;
+    font-size: 20px;
+    font-weight: 500;
+}
+
+.footer-2 ul {
+    margin-top: 10px;
+}
+
+.footer-2 ul li {
+    padding: 5px 0px;
+}
+
+.footer-3 h3 {
+    border-bottom: 5px solid #ff9800;
+    font-size: 20px;
+    font-weight: 500;
+}
+
+.footer-3 ul {
+    margin-top: 10px;
+}
+
+.footer-3 ul li {
+    padding: 5px 0px;
+}
+
+
+/* -------------------- RESPONSIVE DESIGN -------------------- */
+
+/* Large tablets & small desktops */
+@media (max-width: 1200px) {
+    .dashboard-cards {
+        flex-wrap: wrap;
+        gap: 30px;
+    }
+
+    .dashboard-card-1,
+    .dashboard-card-2,
+    .dashboard-card-3,
+    .dashboard-card-4 {
+        padding: 20px 40px;
+    }
+
+    .region-left img {
+        width: 100%;
+        height: auto;
+    }
+
+    .regions {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .footer {
+        flex-wrap: wrap;
+        text-align: center;
+    }
+
+    .footer-1,
+    .footer-2,
+    .footer-3 {
+        width: 100%;
+        padding: 20px;
+    }
+}
+
+/* Tablets (portrait) */
+@media (max-width: 992px) {
+    .dashboard-div {
+        flex-direction: column;
+    }
+
+    .aside-section {
+        position: relative;
+        width: 100%;
+        height: auto;
+    }
+
+    .main-section {
+        width: 100%;
+    }
+
+    .dashboard-cards {
+        flex-direction: column;
+    }
+
+    .dashboard-card-1,
+    .dashboard-card-2,
+    .dashboard-card-3,
+    .dashboard-card-4 {
+        width: 90%;
+        margin: auto;
+    }
+
+    .regions {
+        flex-direction: column;
+    }
+
+    .region-left img {
+        max-width: 100%;
+        height: auto;
+    }
+
+    .recent-comments-section ul li {
+        flex-direction: column;
+        gap: 20px;
+        text-align: center;
+    }
+
+    .recent-comments-section ul li img {
+        height: 70px;
+        width: 70px;
+    }
+}
+
+/* Mobile devices */
+@media (max-width: 768px) {
+    .aside-person-info {
+        flex-direction: column;
+        gap: 15px;
+        padding: 20px 0;
+    }
+
+    .aside-options h3 {
+        padding: 15px;
+        font-size: 18px;
+    }
+
+    .aside-options ul li {
+        padding: 8px 15px;
+        font-size: 14px;
+    }
+
+    .dashboard-header {
+        font-size: 20px;
+        text-align: center;
+    }
+
+    .dashboard-cards {
+        gap: 20px;
+    }
+
+    .upper-dashboard {
+        gap: 20px;
+    }
+
+    .progress-bar-section .progress-bar-1,
+    .progress-bar-section .progress-bar-2,
+    .progress-bar-section .progress-bar-3 {
+        width: 100%;
+        height: 30px;
+    }
+
+    .progress-div-1,
+    .progress-div-2,
+    .progress-div-3 {
+        font-size: 14px;
+    }
+
+    .countries-section table td {
+        font-size: 14px;
+    }
+
+    .recent-users-section ul li {
+        flex-direction: column;
+        gap: 10px;
+    }
+
+    .footer {
+        flex-direction: column;
+        gap: 20px;
+    }
+
+    .footer-1,
+    .footer-2,
+    .footer-3 {
+        width: 100%;
+        text-align: center;
+    }
+}
+
+/* Extra small screens */
+@media (max-width: 480px) {
+    .dashboard-card-1,
+    .dashboard-card-2,
+    .dashboard-card-3,
+    .dashboard-card-4 {
+        padding: 15px 20px;
+        font-size: 16px;
+    }
+
+    .upper-dashboard {
+        flex-direction: column;
+        gap: 10px;
+    }
+
+    .region-left img {
+        width: 100%;
+        height: auto;
+    }
+
+    table .table-content {
+        padding: 0 10px;
+        width: auto;
+    }
+
+    .countries-section button {
+        width: 100%;
+    }
+
+    .recent-comments-section ul li {
+        text-align: left;
+        align-items: flex-start;
+    }
+
+    .recent-comments-section ul li img {
+        height: 50px;
+        width: 50px;
+    }
+}
